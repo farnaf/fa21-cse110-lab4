@@ -1,4 +1,4 @@
-CSE 110 Lab 4: Expose, Part I
+### CSE 110 Lab 4: Expose, Part I
 1. values added:  20
 2. final result:  20
 3. values added:  20

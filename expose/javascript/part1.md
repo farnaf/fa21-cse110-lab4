@@ -15,6 +15,7 @@ ReferenceError: result is not defined
     at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
     at startup (internal/bootstrap/node.js:283:19)
     at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)
+    The reason that the above error apears is because let only defines result in the scope of the if statement. So once the if statement is closed with a curly brace, variable result doesn't exist anymore and the program cannot look up its value.
 5. result = num1 + num2;
                ^
 TypeError: Assignment to constant variable.
@@ -28,4 +29,5 @@ TypeError: Assignment to constant variable.
     at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
     at startup (internal/bootstrap/node.js:283:19)
     at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)
-6. Doesn't get to return anything (neither an output nor an error) because of the error the porgram throws at line 9
+    Because result is defined as a constant, its value cannot change to be the sum of num1 and num2. This inconsistency causes the above error.
+6. Doesn't get to print anything (neither an output nor an error) because of the error the porgram throws at line 9, and the disruption it causes to the rest of the program running. 

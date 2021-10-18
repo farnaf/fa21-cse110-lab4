@@ -1,3 +1,4 @@
+### CSE 110 Lab 4: Expose, Part II
 1. 3
 2. 150
 3. 150

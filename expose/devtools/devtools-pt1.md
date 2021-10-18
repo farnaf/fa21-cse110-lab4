@@ -1,3 +1,4 @@
+### CSE 110 Lab 4: DevTools Part I
 1. citylots.json
 2. expose.js
 3. 214 B
